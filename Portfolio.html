@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Estilo de pagina web.css">
+    <title>Angel Garcia's Homespace | Portfolio</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO .</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="Home.html" class="link">Home</a></li>
+                <li><a href="Blog.html" class="link">Blog</a></li>
+                <li><a href="#" class="link active">Portfolio</a></li>
+                <li><a href="About.html" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="window.location.href='Login.html'">Sign in</button>
+
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+<!-- Aquí va el contenido de tu página principal -->
+<section class="portfolio-content">
+    <h1>My Portfolio</h1>
+    <p>Explore some of my most exciting projects that I've worked on. Below is an example of one of my projects.</p>
+    
+    <!-- Project 1 -->
+    <div class="portfolio-project">
+        <h2>Project 1: Blog personal de CMU 290</h2>
+        <p>This is a web application built on WordPress, a personal Blog project not only for the course of CMU 290 but also a personal space to share content about myself.</p>
+        <a href="https://angel.t3chnerds.com/" target="_blank">View Project</a>
+    </div>
+</section>
+
+
+</div>
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+</body>
+</html>

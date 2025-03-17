@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="Estilo de pagina web.css">
+    <title>Angel Garcia's Homespace | Blog</title>
+</head>
+<body>
+ <div class="wrapper">
+    <nav class="nav">
+        <div class="nav-logo">
+            <p>LOGO .</p>
+        </div>
+        <div class="nav-menu" id="navMenu">
+            <ul>
+                <li><a href="Home.html" class="link">Home</a></li>
+                <li><a href="#" class="link active">Blog</a></li>
+                <li><a href="Portfolio.html" class="link">Portfolio</a></li>
+                <li><a href="About.html" class="link">About</a></li>
+            </ul>
+        </div>
+        <div class="nav-button">
+            <button class="btn white-btn" id="loginBtn" onclick="window.location.href='Login.html'">Sign in</button>
+
+        </div>
+        <div class="nav-menu-btn">
+            <i class="bx bx-menu" onclick="myMenuFunction()"></i>
+        </div>
+    </nav>
+<!-- Aquí va el contenido de tu página principal -->
+<!-- Blog Content -->
+<section class="blog-content" style="padding: 50px 20px;">
+    <h1>Welcome to My Blog</h1>
+    <p>Here, I share my thoughts, tutorials, and the latest updates on my projects. Explore my writing and stay tuned for more content!</p>
+    
+    <!-- Post 1 -->
+    <div class="post-item" style="margin-bottom: 30px;">
+        <h2>How to Build an Underwater Base in Minecraft</h2>
+        <p>Learn how to create an amazing underwater base with step-by-step instructions and tips for making the most out of your resources in Minecraft. Whether you're new to the game or an experienced player, this guide will take your underwater adventure to the next level!</p>
+        <!-- Enlace a un sitio web real -->
+        <a href="https://www.minecraft.net/en-us" target="_blank">Read More</a>
+    </div>
+
+    <!-- Post 2 -->
+    <div class="post-item" style="margin-bottom: 30px;">
+        <h2>The Future of Web Development</h2>
+        <p>In this post, I discuss the latest trends in web development, including the rise of AI, the growing importance of web performance, and new frameworks like React and Vue.js that are shaping the future of web design.</p>
+        <!-- Enlace a un sitio web real -->
+        <a href="https://developer.mozilla.org/en-US/docs/Learn" target="_blank">Read More</a>
+    </div>
+
+    <!-- Post 3 -->
+    <div class="post-item" style="margin-bottom: 30px;">
+        <h2>Tips for Starting Your Own Blog</h2>
+        <p>Thinking of starting your own blog? Here are some essential tips and tools to get you started. From choosing a platform to writing your first post, this guide covers everything you need to know to launch your blogging journey.</p>
+        <!-- Enlace a un sitio web real -->
+        <a href="https://www.wordstream.com/blogs" target="_blank">Read More</a>
+    </div>
+</section>
+
+
+</div>
+<script>
+   
+   function myMenuFunction() {
+    var i = document.getElementById("navMenu");
+    if(i.className === "nav-menu") {
+        i.className += " responsive";
+    } else {
+        i.className = "nav-menu";
+    }
+   }
+ 
+</script>
+</body>
+</html>
